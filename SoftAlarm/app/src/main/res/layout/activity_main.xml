@@ -1,18 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:padding="@dimen/main_padding">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--     7:30 AM      o-    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:30"
+                android:textColor="@color/font"
+                android:fontFamily="@font/pt_mono"
+                android:textSize="@dimen/clock_num_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="AM"
+                android:fontFamily="@font/pt_mono"
+                android:textColor="@color/font"
+                android:textSize="@dimen/clock_ampm_font_size"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        </LinearLayout>
+
+        <!--     (-  +)    -->
+        <LinearLayout
+            android:layout_width="@dimen/panel_width"
+            android:layout_height="@dimen/panel_height"
+            android:orientation="horizontal"
+            android:background="@drawable/panel"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageButton
+                android:layout_width="@dimen/image_button_size"
+                android:layout_height="@dimen/image_button_size"
+                android:background="@drawable/time_controller_ripple"
+                android:src="@drawable/ic_minus"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="@dimen/image_button_size"
+                android:layout_height="@dimen/image_button_size"
+                android:background="@drawable/time_controller_ripple"
+                android:src="@drawable/ic_add"/>
+
+        </LinearLayout>
+
+        <room106.app.softalarm.views.SoftAwakeButton
+            android:layout_width="@dimen/panel_width"
+            android:layout_height="@dimen/panel_height"
+            android:layout_marginTop="14dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
