@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SoftAlarm</string>
+    <string name="app_name">Soft Alarm</string>
     <string name="alarm">Alarm</string>
     <string name="stop">Stop</string>
     <string name="snooze">Snooze</string>
