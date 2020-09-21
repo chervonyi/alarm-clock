@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <dimen name="clock_num_font_size">40sp</dimen>
     <dimen name="clock_ampm_font_size">24sp</dimen>
     <dimen name="font_size">20sp</dimen>
     <dimen name="button_font_size">16sp</dimen>
-    <dimen name="main_padding">30sp</dimen>
+    <dimen name="main_padding">18sp</dimen>
     <dimen name="image_button_size">36sp</dimen>
     <dimen name="panel_width">120sp</dimen>
     <dimen name="panel_height">46sp</dimen>
     <dimen name="soft_awake_button_padding">11dp</dimen>
+
+    <!--    Hint Box   -->
+    <dimen name="close_button_size">26dp</dimen>
+    <dimen name="hint_box_corners">10dp</dimen>
+    <dimen name="hint_box_header_font_size">16sp</dimen>
+    <dimen name="hint_box_body_font_size">14sp</dimen>
 
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hint_box"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="6dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_feather_green"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soft_awake"
+            android:textSize="@dimen/hint_box_header_font_size"
+            android:textColor="@color/font"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soft_awake_hint"
+            android:textSize="@dimen/hint_box_body_font_size"
+            android:textColor="@color/hint_box_body_font"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="@dimen/close_button_size"
+        android:layout_height="@dimen/close_button_size"
+        android:src="@drawable/ic_close"
+        android:scaleType="fitCenter"
+        android:padding="4dp"
+        android:background="@drawable/close_button"/>
+
+</LinearLayout>

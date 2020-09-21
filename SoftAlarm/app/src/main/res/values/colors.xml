@@ -7,6 +7,9 @@
     <color name="accent">#53CE95</color>
     <color name="accent_pressed">#3BA574</color>
     <color name="font">#FFFFFF</color>
+    <color name="hint_box_body_font">#66FFFFFF</color>
+    <color name="close_button_background">#313131</color>
+    <color name="close_button_background_pressed">#2C2C2C</color>
 
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>

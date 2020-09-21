@@ -3,4 +3,6 @@
     <string name="alarm">Alarm</string>
     <string name="stop">Stop</string>
     <string name="snooze">Snooze</string>
+    <string name="soft_awake">Soft awake</string>
+    <string name="soft_awake_hint">Makes three beeps with interval in 10 minutes before alarm.</string>
 </resources>
