@@ -2,10 +2,10 @@
 <resources>
 
     <color name="background">#191919</color>
-    <color name="panel_background">#292929</color>
-    <color name="panel_background_ripple">#232323</color>
+    <color name="panel">#292929</color>
+    <color name="panel_pressed">#232323</color>
     <color name="accent">#53CE95</color>
-    <color name="accent_pressed">#3DA575</color>
+    <color name="accent_pressed">#3BA574</color>
     <color name="font">#FFFFFF</color>
 
     <color name="colorPrimary">#6200EE</color>
