@@ -1,6 +1,5 @@
 package room106.app.softalarm.activities
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -59,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 setUpAlarm()
             }
         } else {
-            alarm?.cancelAlarm(this)
+            alarm?.cancel(this)
         }
 
         if (pref != null) {
@@ -92,6 +91,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpAlarm() {
-        alarm?.setUpAlarm(this, clock!!.getCalendar())
+        alarm?.setUp(this, clock!!.getCalendar())
     }
 }

@@ -2,19 +2,16 @@ package room106.app.softalarm
 
 import android.app.AlarmManager
 import android.app.PendingIntent
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.text.format.DateUtils
 import android.util.Log
-import room106.app.softalarm.activities.AlarmActivity
 import java.util.*
 
 class Alarm {
 
     private val minTimeToFireAlarm = 1000 * 60 * 2
 
-    fun setUpAlarm(context: Context, alarmTime: Calendar) {
+    fun setUp(context: Context, alarmTime: Calendar) {
 
         val intent = Intent(context, AlarmBroadcastReceiver::class.java)
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
@@ -39,11 +36,11 @@ class Alarm {
         alarmManager.setRepeating(
             AlarmManager.RTC_WAKEUP,        // Alarm type
             alarmTime.timeInMillis,          // Time
-            1000 * 60 * 2,      // Interval
+            1000 * 60 * 60,      // Interval
             alarmIntent)                    // Pending Intent
     }
 
-    fun cancelAlarm(context: Context) {
+    fun cancel(context: Context) {
         Log.d("Alarm", "Cancel alarm!")
         val intent = Intent(context, AlarmBroadcastReceiver::class.java)
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager

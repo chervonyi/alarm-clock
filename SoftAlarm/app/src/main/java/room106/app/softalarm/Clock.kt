@@ -11,7 +11,7 @@ class Clock(context: Context) {
     private var pref = SharedPreferencesManager(context)
     private val timeStep = 1
 
-    private val hoursByDefault = 10
+    private val hoursByDefault = 12
     private val minutesByDefault = 30
 
     init {

@@ -13,6 +13,7 @@
         android:theme="@style/AppTheme">
 
         <receiver android:name=".AlarmBroadcastReceiver"/>
+        <receiver android:name=".SnoozeBroadcastReceiver"/>
 
         <activity android:name=".activities.AlarmActivity"
             android:screenOrientation="portrait">

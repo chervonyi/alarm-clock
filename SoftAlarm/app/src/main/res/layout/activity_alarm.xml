@@ -66,7 +66,8 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/snooze_button"
             android:textColor="@color/background"
-            style="@style/RoundButton"/>
+            style="@style/RoundButton"
+            android:onClick="onClickSnooze"/>
 
     </LinearLayout>
 
@@ -79,6 +80,7 @@
         android:textColor="@color/font"
         style="@style/RoundButton"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:onClick="onClickStop"/>
 
 </RelativeLayout>

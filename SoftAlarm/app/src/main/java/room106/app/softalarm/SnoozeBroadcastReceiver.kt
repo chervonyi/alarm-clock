@@ -8,11 +8,11 @@ import android.util.Log
 import android.widget.Toast
 import room106.app.softalarm.activities.AlarmActivity
 
-class AlarmBroadcastReceiver: BroadcastReceiver()  {
+class SnoozeBroadcastReceiver: BroadcastReceiver()  {
 
     override fun onReceive(context: Context?, intent: Intent?) {
 
-        Log.d("Alarm", "onReceive - Alarm")
+        Log.d("Alarm", "onReceive - Snooze")
         val alarmIntent = Intent(context, AlarmActivity::class.java)
         context?.startActivity(alarmIntent)
     }
