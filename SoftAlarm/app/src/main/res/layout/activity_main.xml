@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     android:background="@color/background"
     android:padding="@dimen/main_padding">
 
@@ -23,6 +23,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="7:30"
@@ -31,6 +32,7 @@
                 android:textSize="@dimen/clock_num_font_size" />
 
             <TextView
+                android:id="@+id/time_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -44,12 +46,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
 
-            <Switch
-                android:id="@+id/switch1"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/alarm_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:ignore="UseSwitchCompatOrMaterialXml"/>
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 
@@ -65,6 +66,7 @@
             android:paddingEnd="12dp">
 
             <ImageButton
+                android:id="@+id/time_controller_minus"
                 android:layout_width="@dimen/image_button_size"
                 android:layout_height="@dimen/image_button_size"
                 android:background="@drawable/time_controller_ripple"
@@ -76,6 +78,7 @@
                 android:layout_weight="1"/>
 
             <ImageButton
+                android:id="@+id/time_controller_plus"
                 android:layout_width="@dimen/image_button_size"
                 android:layout_height="@dimen/image_button_size"
                 android:background="@drawable/time_controller_ripple"
@@ -84,6 +87,7 @@
         </LinearLayout>
 
         <room106.app.softalarm.views.SoftAwakeButton
+            android:id="@+id/soft_awake_button"
             android:layout_width="@dimen/panel_width"
             android:layout_height="@dimen/panel_height"
             android:layout_marginTop="14dp"/>
@@ -92,6 +96,7 @@
 
     <room106.app.softalarm.views.HintBoxView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
 </RelativeLayout>
