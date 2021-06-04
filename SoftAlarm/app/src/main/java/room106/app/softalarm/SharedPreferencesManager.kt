@@ -9,7 +9,8 @@ class SharedPreferencesManager(context: Context) {
     enum class Key(name: String) {
         HOURS("hours"),
         MINUTES("minutes"),
-        SWITCHER("switcher")
+        SWITCHER("switcher"),
+        SOFT_AWAKE_ROUNDS("soft_awake_rounds")
     }
 
     private var pref: SharedPreferences

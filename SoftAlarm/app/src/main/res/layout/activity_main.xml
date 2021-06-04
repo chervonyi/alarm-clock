@@ -90,7 +90,8 @@
             android:id="@+id/soft_awake_button"
             android:layout_width="@dimen/panel_width"
             android:layout_height="@dimen/panel_height"
-            android:layout_marginTop="14dp"/>
+            android:layout_marginTop="14dp"
+            android:onClick="onClickSoftAwakeButton"/>
 
     </LinearLayout>
 

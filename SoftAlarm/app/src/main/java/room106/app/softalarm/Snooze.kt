@@ -9,12 +9,13 @@ import android.util.Log
 
 class Snooze {
 
+    private val requestCode = 1
     private val snoozeTimeMinutes = 5 * 60 * 1000
 
     fun setUp(context: Context) {
         val intent = Intent(context, SnoozeBroadcastReceiver::class.java)
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val alarmIntent = PendingIntent.getBroadcast(context, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val alarmIntent = PendingIntent.getBroadcast(context, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
         // Fire one-time alarm in 5 minutes
         alarmManager.set(
